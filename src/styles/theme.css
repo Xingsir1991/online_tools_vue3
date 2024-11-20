@@ -1,0 +1,60 @@
+:root {
+  /*status*/
+  --vxe-ui-font-primary-color: #9a53d2;
+  --vxe-ui-status-success-color: #1cae71;
+  --vxe-ui-status-info-color: #999999;
+  --vxe-ui-status-warning-color: #fecf3e;
+  --vxe-ui-status-danger-color: #f87d53;
+  --vxe-ui-status-error-color: #f5222d;
+  --vxe-ui-font-primary-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-font-primary-color) 70%
+  );
+  --vxe-ui-status-success-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-status-success-color) 70%
+  );
+  --vxe-ui-status-info-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-status-info-color) 70%
+  );
+  --vxe-ui-status-warning-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-status-warning-color) 70%
+  );
+  --vxe-ui-status-danger-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-status-danger-color) 70%
+  );
+  --vxe-ui-status-error-disabled-color: color-mix(
+    in srgb,
+    white 30%,
+    var(--vxe-ui-status-error-color) 70%
+  );
+
+  /*table*/
+  --vxe-ui-table-header-background-color: #f8f8f9;
+  --vxe-ui-table-border-color: #e8eaec;
+  --vxe-ui-table-row-hover-background-color: #f5f7fa;
+  /* 斑马线背景色 */
+  --vxe-ui-table-row-striped-background-color: #fafafa;
+  /* 悬浮斑马线背景色 */
+  --vxe-ui-table-row-hover-striped-background-color: #f5f7fa;
+  --vxe-ui-table-row-radio-checked-background-color: #fff3e0;
+  --vxe-ui-table-row-hover-radio-checked-background-color: #ffebbc;
+  --vxe-ui-table-row-checkbox-checked-background-color: #fff3e0;
+  --vxe-ui-table-row-hover-checkbox-checked-background-color: #ffebbc;
+  /* 表格选中背景色 */
+  --vxe-ui-table-row-current-background-color: #edf8fd;
+  /* 表格选中悬浮背景色 */
+  --vxe-ui-table-row-hover-current-background-color: #d7effb;
+  --vxe-ui-table-fixed-scrolling-box-shadow-color: rgba(0, 0, 0, 0.12);
+
+  /* modal */
+  --vxe-ui-modal-header-background-color: #fff;
+}
