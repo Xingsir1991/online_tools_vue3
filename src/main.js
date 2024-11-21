@@ -1,12 +1,12 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+import pinia from "./store";
+import router from "./router";
 import VxeUI from "vxe-pc-ui";
-import "vxe-pc-ui/lib/style.css";
 import VxeUITable from "vxe-table";
-import "vxe-table/lib/style.css";
+import "@/styles";
 
-import "./styles/theme.css";
+const app = createApp(App);
 
-
-createApp(App).use(VxeUI).use(VxeUITable).mount("#app");
+app.use(router).use(pinia).use(VxeUI).use(VxeUITable).mount("#app");

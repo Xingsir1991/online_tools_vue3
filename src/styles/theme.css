@@ -1,11 +1,27 @@
 :root {
+  --border-color: #e6e9f2;
+  --main-bg-color: #f7f8fc;
+  --main-font-color: #2f2569;
+  --secondary-font-color: #8388a7;
+
   /*status*/
   --vxe-ui-font-primary-color: #9a53d2;
+  --vxe-ui-font-primary-tinge-color: #f5eefb;
   --vxe-ui-status-success-color: #1cae71;
   --vxe-ui-status-info-color: #999999;
   --vxe-ui-status-warning-color: #fecf3e;
   --vxe-ui-status-danger-color: #f87d53;
   --vxe-ui-status-error-color: #f5222d;
+  --vxe-ui-font-primary-lighten-color: color-mix(
+    in srgb,
+    white 20%,
+    var(--vxe-ui-font-primary-color) 80%
+  );
+  --vxe-ui-font-primary-darken-color: color-mix(
+    in srgb,
+    black 10%,
+    var(--vxe-ui-font-primary-color) 90%
+  );
   --vxe-ui-font-primary-disabled-color: color-mix(
     in srgb,
     white 30%,
@@ -39,7 +55,7 @@
 
   /*table*/
   --vxe-ui-table-header-background-color: #f8f8f9;
-  --vxe-ui-table-border-color: #e8eaec;
+  --vxe-ui-table-border-color: var(--border-color);
   --vxe-ui-table-row-hover-background-color: #f5f7fa;
   /* 斑马线背景色 */
   --vxe-ui-table-row-striped-background-color: #fafafa;
