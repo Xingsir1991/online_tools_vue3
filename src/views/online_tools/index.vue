@@ -70,6 +70,9 @@ const copyBaiduMergeVal = () => {
 .item {
   margin-bottom: 20px;
 }
+.group{
+  padding: 20px;
+}
 .title {
   font-size: 18px;
   margin-bottom: 16px;

@@ -14,4 +14,13 @@ export default defineConfig({
     outDir: "dist", // 输出目录
     sourcemap: false, // 是否生成 sourcemap 文件
   },
+  server: {
+    proxy: {
+      "/rsshub": {
+        target: "https://rsshub.app", // RSSHub 的地址
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/rsshub/, ""), // 重写路径
+      },
+    },
+  },
 });

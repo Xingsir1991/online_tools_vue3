@@ -7,18 +7,12 @@
       <div class="mid">
         <ul>
           <li
-            @click="routePush('OnlineTools')"
-            :class="route.name == 'OnlineTools' ? 'active' : ''"
+            v-for="item in navList"
+            @click="routePush(item.name)"
+            :class="route.name == item.name ? 'active' : ''"
           >
-            <i class="iconfont icon-codelibrary"></i>
-            在线工具
-          </li>
-          <li
-            @click="routePush('NavigationWebsite')"
-            :class="route.name == 'NavigationWebsite' ? 'active' : ''"
-          >
-            <i class="iconfont icon-appstore"></i>
-            导航网站
+            <i class="iconfont" :class="item.icon"></i>
+            {{ item.title }}
           </li>
         </ul>
       </div>
@@ -34,6 +28,7 @@
 
 <script setup>
 import { useRoute, useRouter } from "vue-router";
+import { navList } from "./config";
 
 const route = useRoute();
 const router = useRouter();
@@ -91,22 +86,23 @@ const routePush = (name) => {
       }
     }
     .bottom {
-      height: 50px;
-      line-height: 50px;
-      display: flex;
-      padding: 0 60px;
-      justify-content: space-between;
-      align-items: center;
-      i {
-        color: var(--secondary-font-color);
-        font-size: 20px;
-        cursor: pointer;
+      .icon {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        padding: 0 60px;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          color: var(--secondary-font-color);
+          font-size: 20px;
+          cursor: pointer;
+        }
       }
     }
   }
   .right {
     flex: 1;
-    padding: 30px;
   }
 }
 </style>

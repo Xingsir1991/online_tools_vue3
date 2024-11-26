@@ -1,0 +1,64 @@
+[
+  {
+    "title": "💬-社交媒体",
+    "id": "social",
+    "child": [
+      {
+        "title": "Facebook",
+        "id": "facebook",
+        "url": "https://rsshub.app/facebook/user/facebook"
+      },
+      {
+        "title": "Twitter",
+        "id": "twitter",
+        "url": "https://rsshub.app/twitter/user/twitter"
+      },
+      {
+        "title": "Instagram",
+        "id": "instagram",
+        "url": "https://rsshub.app/instagram/user/instagram"
+      }
+    ]
+  },
+  {
+    "title": "📱-新媒体",
+    "id": "new-media",
+    "child": [
+      {
+        "title": "36kr-资讯热榜",
+        "id": "36kr-hot-list",
+        "url": "/rsshub/36kr/hot-list"
+      },
+      {
+        "title": "36kr-最新资讯",
+        "id": "36kr-news",
+        "url": "/rsshub/36kr/news"
+      },
+      {
+        "title": "36kr-快讯",
+        "id": "36kr-newsflashes",
+        "url": "/rsshub/36kr/newsflashes"
+      },
+      {
+        "title": "36kr-推荐资讯",
+        "id": "36kr-recommend",
+        "url": "/rsshub/36kr/recommend"
+      },
+      {
+        "title": "36kr-生活",
+        "id": "36kr-life",
+        "url": "/rsshub/36kr/life"
+      },
+      {
+        "title": "36kr-房产",
+        "id": "36kr-estate",
+        "url": "/rsshub/36kr/estate"
+      },
+      {
+        "title": "36kr-职场",
+        "id": "36kr-workplace",
+        "url": "/rsshub/36kr/workplace"
+      }
+    ]
+  }
+]

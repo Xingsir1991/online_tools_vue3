@@ -24,6 +24,14 @@ export const routeConfigs = [
           title: "导航网站",
         },
       },
+      {
+        path: "rss_reader",
+        name: "RssReader",
+        component: () => import("../views/rss_reader/index.vue"),
+        meta: {
+          title: "rss阅读",
+        },
+      },
     ],
   },
   {
